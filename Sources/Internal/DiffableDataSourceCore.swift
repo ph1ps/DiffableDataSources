@@ -56,7 +56,15 @@ final class DiffableDataSourceCore<SectionIdentifierType: Hashable, ItemIdentifi
         snapshot.structure.sections = currentSnapshot.structure.sections
         return snapshot
     }
-
+    
+    func sectionIdentifier(for section: Int) -> SectionIdentifierType? {
+        guard 0..<sections.endIndex ~= section else {
+            return nil
+        }
+        
+        return sections[section].differenceIdentifier
+    }
+    
     func itemIdentifier(for indexPath: IndexPath) -> ItemIdentifierType? {
         guard 0..<sections.endIndex ~= indexPath.section else {
             return nil

@@ -53,7 +53,17 @@ open class CocoaCollectionViewDiffableDataSource<SectionIdentifierType: Hashable
     public func snapshot() -> DiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType> {
         return core.snapshot()
     }
-
+    
+    /// Returns an section identifier for given section index.
+     ///
+     /// - Parameters:
+     ///   - section: An section index for the section identifier.
+     ///
+     /// - Returns: An section identifier for given section index.
+     public func sectionIdentifier(for section: Int) -> SectionIdentifierType? {
+         return core.sectionIdentifier(for: section)
+     }
+    
     /// Returns an item identifier for given index path.
     ///
     /// - Parameters:

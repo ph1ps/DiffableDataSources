@@ -36,15 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B41587122B5210500183AA2 /* TableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDiffableDataSource.swift; sourceTree = "<group>"; };
+		6B41587122B5210500183AA2 /* TableViewDiffableDataSource.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TableViewDiffableDataSource.swift; sourceTree = "<group>"; tabWidth = 4; };
 		6B46555B22B6BC81005202D1 /* HashableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableExtension.swift; sourceTree = "<group>"; };
 		6B46555D22B7F904005202D1 /* UniversalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalError.swift; sourceTree = "<group>"; };
-		6B466B2122B969600035D72F /* CollectionViewDiffableDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDiffableDataSourceTests.swift; sourceTree = "<group>"; };
-		6B466B2322B96A520035D72F /* CocoaCollectionViewDiffableDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaCollectionViewDiffableDataSourceTests.swift; sourceTree = "<group>"; };
-		6BA3A77F22B54DA400AD51ED /* CollectionViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDiffableDataSource.swift; sourceTree = "<group>"; };
-		6BA3A79322B5A35F00AD51ED /* DiffableDataSourceCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceCore.swift; sourceTree = "<group>"; };
-		6BA3A7B022B6A5CE00AD51ED /* CocoaCollectionViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaCollectionViewDiffableDataSource.swift; sourceTree = "<group>"; };
-		6BA3A7B522B820DA00AD51ED /* TableViewDiffableDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDiffableDataSourceTests.swift; sourceTree = "<group>"; };
+		6B466B2122B969600035D72F /* CollectionViewDiffableDataSourceTests.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDiffableDataSourceTests.swift; sourceTree = "<group>"; tabWidth = 4; };
+		6B466B2322B96A520035D72F /* CocoaCollectionViewDiffableDataSourceTests.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CocoaCollectionViewDiffableDataSourceTests.swift; sourceTree = "<group>"; tabWidth = 4; };
+		6BA3A77F22B54DA400AD51ED /* CollectionViewDiffableDataSource.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDiffableDataSource.swift; sourceTree = "<group>"; tabWidth = 4; };
+		6BA3A79322B5A35F00AD51ED /* DiffableDataSourceCore.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceCore.swift; sourceTree = "<group>"; tabWidth = 4; };
+		6BA3A7B022B6A5CE00AD51ED /* CocoaCollectionViewDiffableDataSource.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CocoaCollectionViewDiffableDataSource.swift; sourceTree = "<group>"; tabWidth = 4; };
+		6BA3A7B522B820DA00AD51ED /* TableViewDiffableDataSourceTests.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TableViewDiffableDataSourceTests.swift; sourceTree = "<group>"; tabWidth = 4; };
 		6BA4F52822BC0768008D5117 /* MainThreadSerialDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadSerialDispatcher.swift; sourceTree = "<group>"; };
 		6BA4F52A22BC0AF3008D5117 /* MainThreadSerialDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadSerialDispatcherTests.swift; sourceTree = "<group>"; };
 		6BB762CC22B455170050DC03 /* DiffableDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiffableDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
