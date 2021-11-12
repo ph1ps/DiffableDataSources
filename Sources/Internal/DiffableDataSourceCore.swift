@@ -1,5 +1,4 @@
 import Foundation
-import QuartzCore
 import DifferenceKit
 
 final class DiffableDataSourceCore<SectionIdentifierType: Hashable, ItemIdentifierType: Hashable> {
