@@ -1,6 +1,7 @@
+import DifferenceKit
 /// A class for backporting `NSDiffableDataSourceSnapshot` introduced in iOS 13.0+, macOS 10.15+, tvOS 13.0+.
 /// Represents the mutable state of diffable data source of UI.
-public struct DiffableDataSourceSnapshot<SectionIdentifierType: Hashable, ItemIdentifierType: Hashable> {
+public struct DiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType> where SectionIdentifierType: Differentiable, SectionIdentifierType: Hashable, ItemIdentifierType: Differentiable, ItemIdentifierType: Hashable {
     internal var structure = SnapshotStructure<SectionIdentifierType, ItemIdentifierType>()
 
     /// Creates a new empty snapshot object.

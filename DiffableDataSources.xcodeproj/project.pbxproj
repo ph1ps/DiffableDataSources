@@ -49,7 +49,7 @@
 		6BA4F52A22BC0AF3008D5117 /* MainThreadSerialDispatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadSerialDispatcherTests.swift; sourceTree = "<group>"; };
 		6BB762CC22B455170050DC03 /* DiffableDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiffableDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB762D522B455170050DC03 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BB762E822B455520050DC03 /* SnapshotStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotStructure.swift; sourceTree = "<group>"; };
+		6BB762E822B455520050DC03 /* SnapshotStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SnapshotStructure.swift; sourceTree = "<group>"; tabWidth = 4; };
 		6BB762E922B455520050DC03 /* DiffableDataSourceSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceSnapshot.swift; sourceTree = "<group>"; };
 		6BB762EA22B455520050DC03 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BB762EF22B455590050DC03 /* DiffableDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceTests.swift; sourceTree = "<group>"; };

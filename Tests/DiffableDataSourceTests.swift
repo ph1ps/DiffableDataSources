@@ -1,8 +1,11 @@
 import XCTest
 @testable import DiffableDataSources
+@testable import DifferenceKit
 
 // swiftlint:disable file_length
 // swiftlint:disable type_body_length
+
+extension Int: ContentEquatable, ContentIdentifiable { }
 
 final class DiffableDataSourceSnapshotTests: XCTestCase {
     func testAppendSections() {
