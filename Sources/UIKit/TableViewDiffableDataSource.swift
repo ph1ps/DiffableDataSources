@@ -38,11 +38,10 @@ open class TableViewDiffableDataSource<SectionIdentifierType: Hashable, ItemIden
     ///                           diffing animation.
     ///   - completion: An optional completion block which is called when the complete
     ///                 performing updates.
-    public func apply(_ snapshot: DiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool = true, completion: (() -> Void)? = nil) {
+    public func apply(_ snapshot: DiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, completion: (() -> Void)? = nil) {
         core.apply(
             snapshot,
             view: tableView,
-            animatingDifferences: animatingDifferences,
             performUpdates: { tableView, changeset, setSections in
                 tableView.reload(using: changeset, with: self.defaultRowAnimation, setData: setSections)
         },

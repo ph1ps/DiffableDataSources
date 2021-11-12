@@ -35,11 +35,10 @@ open class CocoaCollectionViewDiffableDataSource<SectionIdentifierType: Hashable
     ///                           diffing animation.
     ///   - completion: An optional completion block which is called when the complete
     ///                 performing updates.
-    public func apply(_ snapshot: DiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool = true, completion: (() -> Void)? = nil) {
+    public func apply(_ snapshot: DiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, completion: (() -> Void)? = nil) {
         core.apply(
             snapshot,
             view: collectionView,
-            animatingDifferences: animatingDifferences,
             performUpdates: { collectionView, changeset, setSections in
                 collectionView.reload(using: changeset, setData: setSections)
         },

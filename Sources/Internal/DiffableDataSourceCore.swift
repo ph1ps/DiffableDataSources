@@ -12,7 +12,6 @@ final class DiffableDataSourceCore<SectionIdentifierType: Hashable, ItemIdentifi
     func apply<View: AnyObject>(
         _ snapshot: DiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>,
         view: View?,
-        animatingDifferences: Bool,
         performUpdates: @escaping (View, StagedChangeset<[Section]>, @escaping ([Section]) -> Void) -> Void,
         completion: (() -> Void)?
         ) {
@@ -28,26 +27,12 @@ final class DiffableDataSourceCore<SectionIdentifierType: Hashable, ItemIdentifi
             guard let view = view else {
                 return self.sections = newSections
             }
-
-            func performDiffingUpdates() {
-                let changeset = StagedChangeset(source: self.sections, target: newSections)
-                performUpdates(view, changeset) { sections in
-                    self.sections = sections
-                }
+            
+            let changeset = StagedChangeset(source: self.sections, target: newSections)
+            performUpdates(view, changeset) { sections in
+                self.sections = sections
             }
-
-            CATransaction.begin()
-            CATransaction.setCompletionBlock(completion)
-
-            if animatingDifferences {
-                performDiffingUpdates()
-            }
-            else {
-                CATransaction.setDisableActions(true)
-                performDiffingUpdates()
-            }
-
-            CATransaction.commit()
+            completion?()
         }
     }
 
